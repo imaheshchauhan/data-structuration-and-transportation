@@ -1,0 +1,23 @@
+[2023-01-24T15:19:55.475+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exercise15.read_users manual__2023-01-24T15:19:53.342391+00:00 [queued]>
+[2023-01-24T15:19:55.530+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exercise15.read_users manual__2023-01-24T15:19:53.342391+00:00 [queued]>
+[2023-01-24T15:19:55.531+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-24T15:19:55.532+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2023-01-24T15:19:55.535+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-24T15:19:55.621+0000] {taskinstance.py:1304} INFO - Executing <Task(_PythonDecoratedOperator): read_users> on 2023-01-24 15:19:53.342391+00:00
+[2023-01-24T15:19:55.648+0000] {standard_task_runner.py:55} INFO - Started process 204 to run task
+[2023-01-24T15:19:55.683+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'exercise15', 'read_users', 'manual__2023-01-24T15:19:53.342391+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/exercise15.py', '--cfg-path', '/tmp/tmpm1q9471a']
+[2023-01-24T15:19:55.684+0000] {standard_task_runner.py:83} INFO - Job 29: Subtask read_users
+[2023-01-24T15:19:56.064+0000] {task_command.py:389} INFO - Running <TaskInstance: exercise15.read_users manual__2023-01-24T15:19:53.342391+00:00 [running]> on host 3eb38391a0f6
+[2023-01-24T15:19:56.435+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=exercise15
+AIRFLOW_CTX_TASK_ID=read_users
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-24T15:19:53.342391+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-24T15:19:53.342391+00:00
+[2023-01-24T15:19:56.467+0000] {python.py:177} INFO - Done. Returned value was: [{"id": "0001", "name": "Pierre", "city": "Paris", "school": "EPITA", "age": 36, "is_teacher": true}, {"id": "0002", "name": "Ada", "city": "London", "school": "Home", "age": 28, "is_teacher": false}, {"id": "0003", "name": "Margaret", "city": "Boston", "school": "MIT", "age": 33, "is_teacher": true}]
+[2023-01-24T15:19:56.671+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=exercise15, task_id=read_users, execution_date=20230124T151953, start_date=20230124T151955, end_date=20230124T151956
+[2023-01-24T15:19:56.842+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-01-24T15:19:57.112+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check
